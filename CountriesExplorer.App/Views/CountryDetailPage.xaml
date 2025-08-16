@@ -1,8 +1,64 @@
 <?xml version="1.0" encoding="utf-8" ?>
-
 <ContentPage
+    BackgroundColor="{DynamicResource PageBackgroundColor}"
+    Title="{Binding Country.Name.Common}"
     x:Class="CountriesExplorer.App.Views.CountryDetailPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:viewmodels="clr-namespace:CountriesExplorer.App.ViewModels"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
-    <ContentPage.Content />
+
+    <ScrollView Padding="20">
+        <VerticalStackLayout Spacing="20">
+
+            <!--  Bandeira  -->
+            <Frame
+                BorderColor="LightGray"
+                CornerRadius="10"
+                HasShadow="True"
+                Padding="0">
+                <Image
+                    Aspect="AspectFill"
+                    HeightRequest="150"
+                    Margin="0"
+                    Source="{Binding Country.Flags.Png}" />
+            </Frame>
+
+            <!--  Nome Oficial  -->
+            <Label
+                FontAttributes="Bold"
+                FontSize="24"
+                Text="{Binding Country.Name.Official}"
+                TextColor="{DynamicResource PrimaryTextColor}" />
+
+            <!--  Card de informações  -->
+            <Frame
+                BackgroundColor="{DynamicResource SecondaryBackgroundColor}"
+                CornerRadius="10"
+                HasShadow="True"
+                Padding="15">
+                <VerticalStackLayout Spacing="8">
+
+                    <Label
+                        FontAttributes="Bold"
+                        FontSize="Medium"
+                        Text="Capital:" />
+                    <Label Text="{Binding CapitalDisplay}" />
+
+                    <Label
+                        FontAttributes="Bold"
+                        FontSize="Medium"
+                        Text="Region:" />
+                    <Label Text="{Binding Country.Region}" />
+
+                    <Label
+                        FontAttributes="Bold"
+                        FontSize="Medium"
+                        Text="Currency:" />
+                    <Label Text="{Binding CurrencyDisplay}" />
+
+                </VerticalStackLayout>
+            </Frame>
+
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
