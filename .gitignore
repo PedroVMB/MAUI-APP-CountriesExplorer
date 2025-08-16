@@ -1,0 +1,81 @@
+# ======================================
+# .NET / MAUI
+# ======================================
+
+# Build results
+bin/
+obj/
+[Bb]uild/
+[Ll]og/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+
+# Maui cache
+*.maui.cache
+
+# Packages (gerados localmente)
+*.nupkg
+*.snupkg
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+
+# ======================================
+# IDEs
+# ======================================
+
+# Visual Studio
+.vs/
+
+# VS Code
+.vscode/
+
+# Rider / IntelliJ / Android Studio
+.idea/
+*.iml
+
+# ======================================
+# Plataformas
+# ======================================
+
+# Android
+*.apk
+*.aab
+*.keystore
+
+# iOS / MacCatalyst
+*.ipa
+*.xcuserstate
+*.xcuserdata/
+*.xcodeproj/
+*.xcworkspace/
+*.dSYM/
+
+# ======================================
+# Outros
+# ======================================
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Test results
+TestResult*/
+*.coverage
+*.coveragexml
+
+# Certificados / chaves (nunca versionar!)
+*.p12
+*.key
+*.crt
+*.pem
