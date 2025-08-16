@@ -14,8 +14,10 @@ public class CountriesViewModel : BaseViewModel
     public CountriesViewModel(ICountryService countryService)
     {
         _countryService = countryService;
+        Countries = new ObservableCollection<Country>();
         LoadCountriesCommand = new Command(async () => await LoadCountriesAsync());
     }
+
 
     public Command LoadCountriesCommand { get; }
 

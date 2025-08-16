@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <ContentPage
-    Title="Países"
+    Title="Countries"
     x:Class="CountriesExplorer.App.Views.CountriesPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:viewmodels="clr-namespace:CountriesExplorer.App.ViewModels"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
-    <ContentPage.BindingContext>
-        <viewmodels:CountriesViewModel />
-    </ContentPage.BindingContext>
 
     <CollectionView
         ItemsSource="{Binding Countries}"
