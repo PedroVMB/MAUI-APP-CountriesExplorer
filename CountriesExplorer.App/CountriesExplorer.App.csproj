@@ -63,10 +63,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Views\" />
-    </ItemGroup>
-
-    <ItemGroup>
       <ProjectReference Include="..\CountriesExplorer.Core\CountriesExplorer.Core.csproj" />
       <ProjectReference Include="..\CountriesExplorer.Services\CountriesExplorer.Services.csproj" />
     </ItemGroup>

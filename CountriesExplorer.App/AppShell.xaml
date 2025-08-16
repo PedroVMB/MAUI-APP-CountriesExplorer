@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Shell
+    Shell.FlyoutBehavior="Disabled"
+    Title="CountriesExplorer.App"
     x:Class="CountriesExplorer.App.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:CountriesExplorer.App"
-    Shell.FlyoutBehavior="Disabled"
-    Title="CountriesExplorer.App">
+    xmlns:views="clr-namespace:CountriesExplorer.App.Views"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <ShellContent ContentTemplate="{DataTemplate views:CountriesPage}" Title="Countries" />
 
 </Shell>
