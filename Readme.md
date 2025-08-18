@@ -65,7 +65,7 @@ CountriesExplorer/
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/PedroVMB/CountriesExplorer.git
+git clone https://github.com/PedroVMB/MAUI-APP-CountriesExplorer.git
 cd CountriesExplorer
 ````
 
